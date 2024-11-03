@@ -14,3 +14,55 @@ footer {
 section {
   background-color: #ddd;
 }
+body
+{ 
+  display: grid;
+  grid-template-columns:1fr 2fr 1fr;
+  grid-gap: 20px;
+  width: 960px;
+  margin-left: 200px;
+  margin-right: 200px;
+  grid-template-areas:
+ "masthead masthead"
+ "navigation welcome"
+ "cats coming-soon"
+ "copyright copyright";
+}
+
+header{ 
+  grid-area: masthead;
+}
+
+nav {
+  grid-area: navigation;
+}
+
+main {
+  grid-area: welcome;
+  grid-column: 2/3-span;
+  grid-row:1/3;
+}
+
+#cats {
+  grid-area: Cats, Cats, Cats!
+  grid-column: 3;
+  grid-row:1/3;
+}
+
+#coming-soon{
+  grid-area: Coming Soon
+  grid-column: 3;
+  grid-row:1/3;
+}
+footer {
+  grid-area: copyright;
+}
+
+h2, 
+p {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
