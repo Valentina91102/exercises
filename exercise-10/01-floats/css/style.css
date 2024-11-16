@@ -20,6 +20,40 @@ figure {
   overflow: auto;
 }
 
+
 figure img {
   border: 1px solid #222;
+}
+
+#gallery
+img {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.clear {
+  clear: right;
+}
+
+#pool
+img {
+  float: right;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+.clear {
+  clear: left;
+}
+
+#bridge
+img {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.clear {
+  clear: right;
 }
